@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 animated bounceInLeft">
+      <h1 class="light-blue-text text-darken-3"><b>About me</b></h1>
+    </div>
+  </div>
+  <ul class="collapsible animated zoomIn faster" data-collapsible="expandable">
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper light-blue-text text-darken-3 active">
+        <i class="fa fa-user fa-lg" aria-hidden="true"></i>Who am I?
+      </div>
+      <div class="collapsible-body row">
+        <div class="col s6 m4 l3">
+          <img
+            src="assets/dgm_profile.png"
+            alt="david gimeno profile"
+            class="circle responsive-img profile-img"
+            style="background-color: white"
+          />
+        </div>
+        <div class="col s12 m8 l9 left-align-text">
+          <span class="flow-text light-blue-text text-darken-3 description-text"
+            >Mobile application developer with extensive practical experience in mobile app design, developing on Google Dart , Android ,Angular and
+            additional mobile application projects.<br /><br />Open to new computing environments and programming languages. I consider myself
+            organised, punctual and a perfectionist who does not lack creativity.<br /><br />I look forward to new challenges which allow me
+            to learn how to resolve situations more efficiently.</span
+          >
+        </div>
+      </div>
+    </li>
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper light-blue-text text-darken-3">
+        <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>Education background
+      </div>
+      <div class="collapsible-body">
+        <table class="flow-text">
+          <tbody>
+            <tr *ngFor="let e of education">
+              <td>
+                <a class="light-blue-text text-darken-3" href="{{ e.href }}" target="_blank">{{ e.field_1 }}</a>
+              </td>
+              <td class="right-align">{{ e.field_3 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper light-blue-text text-darken-3">
+        <i class="fa fa-briefcase fa-lg" aria-hidden="true"></i>Work experience
+      </div>
+      <div class="collapsible-body">
+        <table class="flow-text">
+          <tbody>
+            <tr *ngFor="let work of works">
+              <td>
+                <a class="light-blue-text text-darken-3" href="{{ work.href }}" target="_blank">{{ work.field_1 }} @ {{ work.field_2 }}</a>
+              </td>
+              <td class="right-align">{{ work.field_3 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper light-blue-text text-darken-3">
+        <i class="material-icons">language</i>Spoken languages
+      </div>
+      <div class="collapsible-body">
+        <table class="flow-text">
+          <tbody>
+            <tr *ngFor="let lang of languages">
+              <td class="light-blue-text text-darken-3">{{ lang.field_1 }}</td>
+              <td>{{ lang.field_2 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+  <div class="row animated fadeInUp faster delay-1s">
+    <div class="card-link col s12 m2 btn-large">
+      <a
+        id="downloadButton"
+        class="light-blue light-blue lighten-5 light-blue-text text-darken-3 valign-wrapper center"
+        href="https://www.dropbox.com/scl/fi/pu5sq9uiv4b54fujwcgo6/Senior-Mobile-Application-Developer.docx?dl=0&rlkey=q498adq4ekib8xvyin1vkdo6u"
+        target="_blank"
+        download
+        >View C.V.
+      </a>
+    </div>
+  </div>
+</div>

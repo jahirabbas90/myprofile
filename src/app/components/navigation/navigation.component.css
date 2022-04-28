@@ -1,0 +1,42 @@
+.brand-logo img {
+  height: 2rem;
+}
+.brand-logo {
+  display: flex !important;
+  align-items: center;
+  height: 100%;
+  margin: 0 2%;
+}
+.brand-logo img:hover {
+  opacity: 0.65;
+}
+nav ul li {
+  transition: all 150ms ease-in-out;
+  margin: 0;
+  background-color: transparent !important;
+}
+nav ul li a {
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0 2rem;
+  box-shadow: inset 0 0 0 0 var(--color-primary);
+  transition: all 250ms;
+}
+nav ul li.active a {
+  box-shadow: inset 0 -6px 0 0 var(--color-primary);
+}
+nav ul li a:hover {
+  background-color: transparent !important;
+}
+#navbar {
+  background: var(--color-secondary);
+}
+.side-nav {
+  background-color: var(--color-secondary);
+  width: 15rem;
+}
+.side-nav li {
+  text-align: center;
+  margin: 1rem 0;
+}
